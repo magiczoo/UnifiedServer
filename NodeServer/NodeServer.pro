@@ -3,7 +3,8 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    aaaa.cpp
 
 include(deployment.pri)
 qtcAddDeployment()
@@ -20,3 +21,6 @@ unix|win32: LIBS += -levent_core
 unix|win32: LIBS += -levent_extra
 
 unix|win32: LIBS += -levent_pthreads
+
+HEADERS += \
+    aaaa.h
