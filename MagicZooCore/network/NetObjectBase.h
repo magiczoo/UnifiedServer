@@ -13,7 +13,7 @@ protected:
     NetObjectProtocol *_protocol;
 
 public:
-    virtual NetObjectBase();
+    NetObjectBase();
     virtual ~NetObjectBase();
     virtual void init(NetDefinedObject *type,NetObjectProtocol *protocol);
     virtual void load(ByteArray *bytes);

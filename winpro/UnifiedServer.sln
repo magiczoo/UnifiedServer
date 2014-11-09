@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnifiedServer", "UnifiedServer\UnifiedServer.vcxproj", "{CBBF4F48-1BC2-4AF4-A4B0-D56A7624FB72}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MagicZooCore", "MagicZooCore\MagicZooCore.vcxproj", "{2D80A071-9FDB-4BED-9FEC-2843F24A4281}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MagicZooCoreUnitTest", "MagicZooCoreUnitTest\MagicZooCoreUnitTest.vcxproj", "{A899E288-BE40-4720-BBDB-01F934DC7CDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBBF4F48-1BC2-4AF4-A4B0-D56A7624FB72}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBBF4F48-1BC2-4AF4-A4B0-D56A7624FB72}.Debug|Win32.Build.0 = Debug|Win32
+		{CBBF4F48-1BC2-4AF4-A4B0-D56A7624FB72}.Release|Win32.ActiveCfg = Release|Win32
+		{CBBF4F48-1BC2-4AF4-A4B0-D56A7624FB72}.Release|Win32.Build.0 = Release|Win32
+		{2D80A071-9FDB-4BED-9FEC-2843F24A4281}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2D80A071-9FDB-4BED-9FEC-2843F24A4281}.Debug|Win32.Build.0 = Debug|Win32
+		{2D80A071-9FDB-4BED-9FEC-2843F24A4281}.Release|Win32.ActiveCfg = Release|Win32
+		{2D80A071-9FDB-4BED-9FEC-2843F24A4281}.Release|Win32.Build.0 = Release|Win32
+		{A899E288-BE40-4720-BBDB-01F934DC7CDE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A899E288-BE40-4720-BBDB-01F934DC7CDE}.Debug|Win32.Build.0 = Debug|Win32
+		{A899E288-BE40-4720-BBDB-01F934DC7CDE}.Release|Win32.ActiveCfg = Release|Win32
+		{A899E288-BE40-4720-BBDB-01F934DC7CDE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

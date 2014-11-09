@@ -11,5 +11,5 @@ void NetObjectXmlExport::init(NetObjectProtocol protocol)
 
 std::string NetObjectXmlExport::exportCode()
 {
-
+	return "";
 }

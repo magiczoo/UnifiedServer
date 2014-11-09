@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{061b8e4d-01e2-4689-8b93-8c8baf8a0daf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\network">
+      <UniqueIdentifier>{58bffbb6-3a37-4068-8c58-4c33c97688a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\utils">
+      <UniqueIdentifier>{df081e5f-dfa8-4290-8ae0-5c212f6662f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\INetObjectCodeExport.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetDefinedObject.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetDefinedObjectProperty.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetObjectBase.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetObjectCppExport.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetObjectJsExport.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetObjectLuaExport.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetObjectProtocol.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetObjectXmlExport.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetScriptObjectBase.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\utils\ByteArray.h">
+      <Filter>Class\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\NetDefinedObject.cpp">
+      <Filter>Class\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\NetDefinedObjectProperty.cpp">
+      <Filter>Class\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\NetObjectBase.cpp">
+      <Filter>Class\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\NetObjectCppExport.cpp">
+      <Filter>Class\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\NetObjectJsExport.cpp">
+      <Filter>Class\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\NetObjectLuaExport.cpp">
+      <Filter>Class\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\NetObjectProtocol.cpp">
+      <Filter>Class\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\NetObjectXmlExport.cpp">
+      <Filter>Class\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\NetScriptObjectBase.cpp">
+      <Filter>Class\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\utils\ByteArray.cpp">
+      <Filter>Class\utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

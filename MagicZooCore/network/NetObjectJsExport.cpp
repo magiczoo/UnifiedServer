@@ -11,5 +11,5 @@ void NetObjectJsExport::init(NetObjectProtocol protocol)
 
 std::string NetObjectJsExport::exportCode()
 {
-
+	return "";
 }

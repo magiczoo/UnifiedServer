@@ -7,7 +7,7 @@
 class INetObjectCodeExport
 {
 public:
-    virtual INetObjectCodeExport(){}
+    INetObjectCodeExport(){}
     virtual ~INetObjectCodeExport()=0;
 
     virtual void init(NetObjectProtocol protocol)=0;

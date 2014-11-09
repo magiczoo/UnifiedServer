@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include "NetDefinedObject.h"
 
 class NetObjectProtocol
 {
@@ -12,7 +13,7 @@ public:
 
     std::vector<NetDefinedObject> definedObject;
 
-    void fillDefaultValue(string name,std::map<std::string,std::string> object);
+    void fillDefaultValue(std::string name,std::map<std::string,std::string> object);
 
 };
 
