@@ -106,8 +106,8 @@ namespace MagicZooCoreUnitTest
 			Assert::AreEqual(bytes.getPosition(), (unsigned int)0, L"位置不可超出最大长度");
 			
 			int value = 0xFFCCAADD;
-			bytes.writeBytes((char*)value,sizeof(int));
-			bytes.writeBytes((char*)value, sizeof(int));
+			bytes.writeBytes((char*)&value,sizeof(int));
+			bytes.writeBytes((char*)&value, sizeof(int));
 
 			int changeValue = 0x11223344;
 			bytes.setPosition(2);
@@ -118,8 +118,8 @@ namespace MagicZooCoreUnitTest
 			int newValue1Result;
 			int newValue2Result;
 			bytes.setPosition(0);
-			bytes.readBytes((char*)newValue1Result, sizeof(int));
-			bytes.readBytes((char*)newValue1Result, sizeof(int));
+			bytes.readBytes((char*)&newValue1Result, sizeof(int));
+			bytes.readBytes((char*)&newValue1Result, sizeof(int));
 
 			Assert::AreEqual(newValue1,newValue1Result,L"数据结果值错误");
 			Assert::AreEqual(newValue2, newValue2Result, L"数据结果值错误");

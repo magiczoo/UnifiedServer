@@ -30,6 +30,11 @@ unsigned int ByteArray::getPosition() const
 	return 0;
 }
 
+void ByteArray::setPosition(unsigned int value)
+{
+
+}
+
 void ByteArray::writeBytes(const char *bytes,unsigned int size)
 {
 
