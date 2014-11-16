@@ -25,14 +25,12 @@ void ByteArray::expandBytes(unsigned int minSize)
 	}
 	_expandSize = (freesize+_size);//扩展后的字节总数
 
-	char *tmpdata = (char*)malloc(sizeof(char*)*_expandSize);//数据扩展后的空间
-	memset(tmpdata, 0x00, _expandSize);
+	char *tmpdata = (char*)malloc(_expandSize);//数据扩展后的空间
 	memcpy(tmpdata, _bytes, _size);//复制数据
 
 	free(_bytes);
 
-	_bytes = (char*)malloc(sizeof(char*)*_expandSize);//扩展数组数据大小
-	memset(_bytes, 0x00, _expandSize);
+	_bytes = (char*)malloc(_expandSize);//扩展数组数据大小
 	memcpy(_bytes, tmpdata, _size);//复制数据
     
 	free(tmpdata);
@@ -65,9 +63,8 @@ void ByteArray::writeBytes(const char *bytes, unsigned int size)
 {
 	if (!_bytes){
 	_size = size;//数据长度
-	_expandSize = size*2;//数组长度
-	_bytes = (char*)malloc(sizeof(char*)*_expandSize);//分配新的指定大小空间(默认直接分配2倍)
-	memset(_bytes, 0x00, _expandSize);
+	_expandSize = (size<<1);//数组长度
+	_bytes = (char*)malloc(_expandSize);//分配新的指定大小空间(默认直接分配2倍)
 	memcpy(_bytes,bytes,size);
 	_position = size;//指针位置应该是最后一个\0 -1
 	}else{
