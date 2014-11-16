@@ -7,15 +7,14 @@ protected:
     unsigned int _size;
 	unsigned int _expandSize;
     unsigned int _position;
-    char *_bytes;
-
+    char* _bytes;
     void expandBytes(unsigned int minSize);
-
+ 
 public:
     ByteArray();
     virtual ~ByteArray();
     void writeBytes(const char *bytes,unsigned int size);
-    void readBytes(const char *bytes,unsigned int size);
+    void readBytes( char *bytes,unsigned int size);
     unsigned int getLength() const;
     unsigned int getPosition() const;
     void setPosition(unsigned int value);
