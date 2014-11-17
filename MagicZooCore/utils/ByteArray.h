@@ -9,6 +9,7 @@ protected:
     unsigned int _position;
     char* _bytes;
     void expandBytes(unsigned int minSize);
+
  
 public:
     ByteArray();
