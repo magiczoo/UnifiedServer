@@ -1,25 +1,27 @@
 #ifndef BYTEARRAY_H
 #define BYTEARRAY_H
 
+#include "../Types.h"
+
 class ByteArray
 {
 protected:
-    unsigned int _size;
-	unsigned int _expandSize;
-    unsigned int _position;
-    char* _bytes;
-    void expandBytes(unsigned int minSize);
+    uint _size;
+	uint _expandSize;
+	uint _position;
+    byte* _bytes;
+    void expandBytes(uint minSize);
 
  
 public:
     ByteArray();
     virtual ~ByteArray();
-    void writeBytes(const char *bytes,unsigned int size);
-    void readBytes( char *bytes,unsigned int size);
-    unsigned int getLength() const;
-    unsigned int getPosition() const;
-    void setPosition(unsigned int value);
-	const char* getBytes() const;
+    void writeBytes(const byte *bytes,uint size);
+    void readBytes( byte *bytes,uint size);
+    uint getLength() const;
+    uint getPosition() const;
+    void setPosition(uint value);
+	const byte* getBytes() const;
 };
 
 #endif // BYTEARRAY_H

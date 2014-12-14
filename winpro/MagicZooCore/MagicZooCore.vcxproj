@@ -77,35 +77,46 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\MagicZooCore\network\INetObjectCodeExport.h" />
-    <ClInclude Include="..\..\MagicZooCore\network\NetDefinedObject.h" />
-    <ClInclude Include="..\..\MagicZooCore\network\NetDefinedObjectProperty.h" />
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectBase.h" />
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectCppExport.h" />
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectJsExport.h" />
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectLuaExport.h" />
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectProtocol.h" />
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectXmlExport.h" />
-    <ClInclude Include="..\..\MagicZooCore\network\NetScriptObjectBase.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\INetObjectCodeExport.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\NetObjectCppExport.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\NetObjectJsExport.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\NetObjectLuaExport.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\NetObjectXmlExport.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\NetType.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\object\NetDynamicObject.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\object\NetObjectBase.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\object\NetObjectValue.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\protocol\NetDefinedObject.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\protocol\NetDefinedObjectProperty.h" />
+    <ClInclude Include="..\..\MagicZooCore\network\protocol\NetObjectProtocol.h" />
+    <ClInclude Include="..\..\MagicZooCore\Types.h" />
     <ClInclude Include="..\..\MagicZooCore\utils\ByteArray.h" />
+    <ClInclude Include="..\..\MagicZooCore\utils\Date.h" />
+    <ClInclude Include="..\..\MagicZooCore\utils\NetworkLocalEndianness.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\MagicZooCore\network\NetDefinedObject.cpp" />
-    <ClCompile Include="..\..\MagicZooCore\network\NetDefinedObjectProperty.cpp" />
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectBase.cpp" />
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectCppExport.cpp" />
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectJsExport.cpp" />
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectLuaExport.cpp" />
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectProtocol.cpp" />
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectXmlExport.cpp" />
-    <ClCompile Include="..\..\MagicZooCore\network\NetScriptObjectBase.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\codeExport\NetObjectCppExport.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\codeExport\NetObjectJsExport.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\codeExport\NetObjectLuaExport.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\codeExport\NetObjectXmlExport.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\object\NetDynamicObject.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\object\NetObjectBase.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\object\NetObjectValue.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\protocol\NetDefinedObject.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\protocol\NetDefinedObjectProperty.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\network\protocol\NetObjectProtocol.cpp" />
     <ClCompile Include="..\..\MagicZooCore\utils\ByteArray.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\utils\Date.cpp" />
+    <ClCompile Include="..\..\MagicZooCore\utils\NetworkLocalEndianness.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

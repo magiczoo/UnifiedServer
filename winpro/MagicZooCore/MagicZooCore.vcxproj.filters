@@ -22,6 +22,15 @@
     <Filter Include="Class\utils">
       <UniqueIdentifier>{df081e5f-dfa8-4290-8ae0-5c212f6662f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Class\network\codeExport">
+      <UniqueIdentifier>{612744f3-9084-40df-a771-f78fdd8133e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\network\object">
+      <UniqueIdentifier>{6814e8dc-b53f-46e0-aa48-9400596e8865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\network\protocol">
+      <UniqueIdentifier>{1b81d67f-709e-49f9-bbf4-a0c773dc1528}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -33,37 +42,52 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\INetObjectCodeExport.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\NetDefinedObject.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\NetDefinedObjectProperty.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectBase.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectCppExport.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectJsExport.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectLuaExport.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectProtocol.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\NetObjectXmlExport.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\MagicZooCore\network\NetScriptObjectBase.h">
-      <Filter>Class\network</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\MagicZooCore\utils\ByteArray.h">
+      <Filter>Class\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\utils\NetworkLocalEndianness.h">
+      <Filter>Class\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\Types.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\NetType.h">
+      <Filter>Class\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\INetObjectCodeExport.h">
+      <Filter>Class\network\codeExport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\NetObjectCppExport.h">
+      <Filter>Class\network\codeExport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\NetObjectJsExport.h">
+      <Filter>Class\network\codeExport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\NetObjectLuaExport.h">
+      <Filter>Class\network\codeExport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\codeExport\NetObjectXmlExport.h">
+      <Filter>Class\network\codeExport</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\object\NetDynamicObject.h">
+      <Filter>Class\network\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\object\NetObjectBase.h">
+      <Filter>Class\network\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\object\NetObjectValue.h">
+      <Filter>Class\network\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\protocol\NetDefinedObject.h">
+      <Filter>Class\network\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\protocol\NetDefinedObjectProperty.h">
+      <Filter>Class\network\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\network\protocol\NetObjectProtocol.h">
+      <Filter>Class\network\protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MagicZooCore\utils\Date.h">
       <Filter>Class\utils</Filter>
     </ClInclude>
   </ItemGroup>
@@ -71,35 +95,47 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\MagicZooCore\network\NetDefinedObject.cpp">
-      <Filter>Class\network</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\MagicZooCore\network\NetDefinedObjectProperty.cpp">
-      <Filter>Class\network</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectBase.cpp">
-      <Filter>Class\network</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectCppExport.cpp">
-      <Filter>Class\network</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectJsExport.cpp">
-      <Filter>Class\network</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectLuaExport.cpp">
-      <Filter>Class\network</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectProtocol.cpp">
-      <Filter>Class\network</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\MagicZooCore\network\NetObjectXmlExport.cpp">
-      <Filter>Class\network</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\MagicZooCore\network\NetScriptObjectBase.cpp">
-      <Filter>Class\network</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\MagicZooCore\utils\ByteArray.cpp">
       <Filter>Class\utils</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\utils\NetworkLocalEndianness.cpp">
+      <Filter>Class\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\codeExport\NetObjectCppExport.cpp">
+      <Filter>Class\network\codeExport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\codeExport\NetObjectJsExport.cpp">
+      <Filter>Class\network\codeExport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\codeExport\NetObjectLuaExport.cpp">
+      <Filter>Class\network\codeExport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\codeExport\NetObjectXmlExport.cpp">
+      <Filter>Class\network\codeExport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\object\NetDynamicObject.cpp">
+      <Filter>Class\network\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\object\NetObjectBase.cpp">
+      <Filter>Class\network\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\object\NetObjectValue.cpp">
+      <Filter>Class\network\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\protocol\NetDefinedObject.cpp">
+      <Filter>Class\network\protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\protocol\NetDefinedObjectProperty.cpp">
+      <Filter>Class\network\protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\network\protocol\NetObjectProtocol.cpp">
+      <Filter>Class\network\protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MagicZooCore\utils\Date.cpp">
+      <Filter>Class\utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

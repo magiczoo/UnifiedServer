@@ -48,7 +48,7 @@ namespace MagicZooCoreUnitTest
 			TByteArray bytes;
 
 			char* text = "test data test data test data test data";
-			bytes.writeBytes(text,strlen(text)+1);
+			bytes.writeBytes((byte*)text,strlen(text)+1);
 
 			Assert::AreEqual(strlen(text)+1,bytes.getLength(),L"写入数据长度错误");
 
@@ -111,15 +111,18 @@ namespace MagicZooCoreUnitTest
 
 			int changeValue = 0x11223344;
 			bytes.setPosition(2);
-			bytes.writeBytes((char *)changeValue, sizeof(int));
+			bytes.writeBytes((char *)&changeValue, sizeof(int));
 
-			int newValue1=0xFFCC1122;
-			int newValue2=0x3344AADD;
+			//DD AA CC FF DD AA CC FF
+			//DD AA 44 33 22 11 CC FF
+
+			int newValue1 = 0x3344AADD;
+			int newValue2 = 0xFFCC1122;
 			int newValue1Result;
 			int newValue2Result;
 			bytes.setPosition(0);
 			bytes.readBytes((char*)&newValue1Result, sizeof(int));
-			bytes.readBytes((char*)&newValue1Result, sizeof(int));
+			bytes.readBytes((char*)&newValue2Result, sizeof(int));
 
 			Assert::AreEqual(newValue1,newValue1Result,L"数据结果值错误");
 			Assert::AreEqual(newValue2, newValue2Result, L"数据结果值错误");

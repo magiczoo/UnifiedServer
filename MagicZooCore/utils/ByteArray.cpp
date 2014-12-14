@@ -17,38 +17,38 @@ ByteArray::~ByteArray()
 	free(_bytes);
 }
 
-void ByteArray::expandBytes(unsigned int minSize)
+void ByteArray::expandBytes(uint minSize)
 {
-	unsigned int freesize = _expandSize - _position;//指南后面的剩余空间
+	uint freesize = _expandSize - _position;//指南后面的剩余空间
 	freesize == 0 ? freesize = (minSize) : freesize;//如果没有空间直接再扩展目标数据大小
 	while (freesize  < minSize){ //一直扩展到可存放目标数据为止
 		freesize = freesize << 1;
 	}
 	_expandSize = (freesize+_position);//扩展后的字节总数
  
-	char *tmpdata = (char*)malloc(_expandSize);//数据扩展后的空间
+	byte *tmpdata = (byte*)malloc(_expandSize);//数据扩展后的空间
 	memcpy(tmpdata, _bytes, _position);//复制数据
 	free(_bytes);
-	_bytes = (char*)malloc(_expandSize);//扩展数组数据大小
+	_bytes = (byte*)malloc(_expandSize);//扩展数组数据大小
 	memcpy(_bytes, tmpdata, _position);//复制数据
 	free(tmpdata);
 	_size = _position;//变更指针
 
 }
 
-unsigned int ByteArray::getLength() const
+uint ByteArray::getLength() const
 {
 	return _size;
 
 }
 
-unsigned int ByteArray::getPosition() const
+uint ByteArray::getPosition() const
 {
 	return _position;
 
 }
 
-void ByteArray::setPosition(unsigned int value)
+void ByteArray::setPosition(uint value)
 {
 	if (value > _size){
 	_position = _size;
@@ -58,14 +58,14 @@ void ByteArray::setPosition(unsigned int value)
 	}
 }
 
-void ByteArray::writeBytes(const char *bytes, unsigned int size)
+void ByteArray::writeBytes(const byte *bytes, uint size)
 {
 	
 
 	if (!_bytes){//初次初始化
 		_size = size;//数据长度
 		_expandSize = (size << 1);//数组长度
-		_bytes = (char*)malloc(_expandSize);//分配新的指定大小空间(默认直接分配2倍)
+		_bytes = (byte*)malloc(_expandSize);//分配新的指定大小空间(默认直接分配2倍)
 		memcpy(_bytes, bytes, size);
 		_position = size;//指针位置应该是最后一个\0 -1
 	}else{//扩展、追加、修改
@@ -78,7 +78,7 @@ void ByteArray::writeBytes(const char *bytes, unsigned int size)
 	}	
 }
 
-void ByteArray::readBytes( char *bytes, unsigned int size)
+void ByteArray::readBytes( byte *bytes, uint size)
 {
 	if (_bytes){
 		if (_position <= _size){
@@ -90,7 +90,7 @@ void ByteArray::readBytes( char *bytes, unsigned int size)
      
 }
 
-const char* ByteArray::getBytes() const
+const byte* ByteArray::getBytes() const
 {
 	return _bytes;
 }
